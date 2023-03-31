@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    font-family: Roboto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ***** Header ***** */
+
+/* *** Logo *** */
+
+.conteneur_ohmyfood {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid grey;
+    /* background-color: lightcoral; */
+}
+
+.logo_ohmyfood {
+    width: 50%;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}
+
+/* *** Localisation *** */
+
+.conteneur_formulaire {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(233, 233, 233);
+}
+
+.icone_localisation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.localisation {
+    width: 30%;
+    border: none;
+    margin-left: 3%;
+    background-color: rgb(233, 233, 233);
+}
+
+.localisation::placeholder {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* *** Introduction *** */
+
+.introduction {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+/* *** Bouton nos restaurants *** */
+
+.conteneur_nos_restaurants {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15%;
+    background-color: rgb(245, 245, 245);
+}
+
+.bouton_nos_restaurants {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bouton_nos_restaurants:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.18);
+}
+
+.bouton_nos_restaurants:active {
+    transform: scale(0.98);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.23);
+}
+
+/* *** Fonctionnement *** */
+
+.conteneur_fonctionnement {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 45px;
+}
+
+.titre_fonctionnement {
+    padding-bottom: 25px;
+}
+
+.conteneur_choix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 65px;
+}
+
+.bouton_choix {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 15px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+}
+
+.bouton_choix:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.18);
+}
+
+.bouton_choix:active {
+    transform: scale(0.98);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.23);
+}
+
+.icone_fonctionnement {
+    color: grey;
+    padding-top: 2.5px;
+}
+
+.numerotation {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    background-color: #9356DC;
+    position: relative;
+    left: -13%;
+}
+
+/* ***** Body ***** */
+
+/* *** Restaurants *** */
+
+.conteneur_restaurants {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(245, 245, 245);
+}
+
+.titre_restaurants {
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.carte_restaurants {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px grey;
+    width: 90%;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 17.5px;
+}
+
+.arriere_plan_carte {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.image_un {
+    background-image: url(/assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.image_deux {
+    background-image: url(/assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.image_trois {
+    background-image: url(/assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.image_quatre {
+    background-image: url(/assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.conteneur_intitules {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+}
+
+.conteneur_description_plat {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteneur_icone_coeur {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coeur_reglages {
+    width: 22px;
+    height: 21px;
+}
+
+.coeur_reglages:hover {
+    color: #FF79DA;
+}
+
+.conteneur_nouveau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 3px;
+    color: rgb(35, 83, 61);
+    background-color: rgb(140, 230, 188);
+}
+
+/* *** Footer *** */
+
+.conteneur_bas_de_page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+}
+
+.conteneur_ohmyfood_bis {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.couleur_logo {
+    width: 35%;
+    filter: brightness(20);
+}
+
+.liens_bas_de_page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.couleur_liens {
+    color: white;
+}
+
+/* ***** Medias Queries ***** */
+
+@media (min-width: 375px) {
+    body {
+        max-width: 375px;
+        margin: auto;
+    }
+}
