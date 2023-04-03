@@ -1,0 +1,325 @@
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-family: Shrikhand;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3,
+p {
+    font-family: Roboto;
+    padding: 2.5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ***** Header ***** */
+
+/* *** Fleche & Logo *** */
+
+.conteneur_logo_fleche {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    /* background-color: lightblue; */
+}
+
+.conteneur_fleche {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightgray; */
+}
+
+.couleur_icone_fleche {
+    color: gray;
+}
+
+.conteneur_logo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.logo_ohmyfood {
+    width: 50%;
+}
+
+/* *** Illustration *** */
+
+.image_lapalettedugout {
+    height: 275px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-image: url(/assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+/* *** Titre & Coeur *** */
+
+.conteneur_titre_coeur {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    border-radius: 20px 20px 0px 0px;
+    /* background-color: lightpink; */
+    background-color: rgb(243, 243, 243);
+}
+
+.conteneur_titre_lapalettedugout {
+    width: 70%;
+    /* background-color: lightblue; */
+}
+
+.conteneur_coeur {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-heart {
+    font-size: 1.5em;
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    transition: all 0.5s linear;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+    color: transparent;
+    font-weight: 899;
+    transform: scale(1.2);
+}
+
+/* ***** Body ***** */
+
+/* *** Cartes *** */
+
+.categorie_plat {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_menu {
+    padding-bottom: 5px;
+}
+
+.barre {
+    width: 35px;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+}
+
+.conteneur_carte_menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.conteneur_menus {
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.carte_menu {
+    width: 90%;
+    background: white;
+    /* height: 10rem; */
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+}
+
+.informations_menu {
+    padding: 15px;
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    overflow: hidden;
+    /* gap: 1rem; */
+}
+
+.intitule_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.nom_du_plat {
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.accompagnements {
+    color: black;
+    font-weight: 200;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.prix_menu {
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+}
+
+.conteneur_animation {
+    text-overflow: ellipsis;
+    background: #99e2d0;
+    cursor: pointer;
+    height: auto;
+    width: 0;
+    opacity: 0;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.icone_validation {
+    width: 24px;
+    font-size: 3rem;
+    transform: rotate(-180deg);
+    transition-duration: .5s;
+}
+
+.carte_menu:hover .icone_validation {
+    transform: rotate(-360deg);
+}
+
+.carte_menu:hover .conteneur_animation {
+    opacity: 100%;
+    width: 7rem;
+}
+
+/* .conteneur_menus {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 30px;
+    background-color: rgb(243, 243, 243);
+}
+
+.titre_menu {
+    padding-bottom: 5px;
+}
+
+.barre {
+    width: 35px;
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+}
+
+.conteneur_carte_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+/* *** Bouton commander *** */
+
+.conteneur_commander {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    background-color: rgb(245, 245, 245);
+}
+
+.bouton_commander {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bouton_commander:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.18);
+}
+
+.bouton_commander:active {
+    transform: scale(0.98);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.23);
+}
+
+/* ***** Footer ***** */
+
+.conteneur_bas_de_page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+}
+
+.conteneur_ohmyfood_bis {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.couleur_logo {
+    width: 35%;
+    filter: brightness(20);
+}
+
+.liens_bas_de_page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.couleur_liens {
+    color: white;
+}
+
+/* ***** Medias Queries ***** */
+
+/* @media (min-width: 375px) {
+    body {
+        max-width: 375px;
+        margin: auto;
+    }
+} */
