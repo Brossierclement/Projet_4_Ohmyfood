@@ -99,6 +99,7 @@ a {
     font-size: 1.5em;
     background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
+    background-clip: text;
     transition: all 0.5s linear;
 }
 
@@ -134,7 +135,56 @@ a {
 .conteneur_carte_menu {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
+    opacity: 0;
+    animation: apparition 0.5s forwards;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: scale(1.2) translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.conteneur_carte_menu:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.conteneur_carte_menu:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.conteneur_carte_menu:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.conteneur_carte_menu:nth-child(6) {
+    animation-delay: 0.8s;
+}
+
+.conteneur_carte_menu:nth-child(7) {
+    animation-delay: 1s;
+}
+
+.conteneur_carte_menu:nth-child(8) {
+    animation-delay: 1.2s;
+}
+
+.conteneur_carte_menu:nth-child(10) {
+    animation-delay: 1.4s;
+}
+
+.conteneur_carte_menu:nth-child(11) {
+    animation-delay: 1.6s;
+}
+
+.conteneur_carte_menu:nth-child(12) {
+    animation-delay: 1.8s;
 }
 
 .conteneur_menus {
@@ -211,44 +261,13 @@ a {
     transition-duration: .5s;
 }
 
-.carte_menu:hover .icone_validation {
+.carte_menu:active .icone_validation {
     transform: rotate(-360deg);
 }
 
-.carte_menu:hover .conteneur_animation {
+.carte_menu:active .conteneur_animation {
     opacity: 100%;
     width: 7rem;
-}
-
-/* .conteneur_menus {
-    display: flex;
-    flex-direction: column;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 30px;
-    background-color: rgb(243, 243, 243);
-}
-
-.titre_menu {
-    padding-bottom: 5px;
-}
-
-.barre {
-    width: 35px;
-    height: 2px;
-    margin-bottom: 20px;
-    background-color: aquamarine;
-}
-
-.conteneur_carte_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
-    background-color: white;
 }
 
 /* *** Bouton commander *** */
@@ -317,9 +336,9 @@ a {
 
 /* ***** Medias Queries ***** */
 
-/* @media (min-width: 375px) {
+@media (min-width: 375px) {
     body {
         max-width: 375px;
         margin: auto;
     }
-} */
+}

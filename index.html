@@ -32,22 +32,24 @@
     </section>
 
     <section class="conteneur_fonctionnement">
-      <h2 class="titre_fonctionnement">Fonctionnement</h2>
       <nav class="conteneur_choix">
+        <div class="conteneur_titre_fonctionnement">
+          <h2 class="titre_fonctionnement">Fonctionnement</h2>
+        </div>
         <button class="bouton_choix">
           <div class="numerotation">1</div>
           <i class="fa-solid fa-mobile-screen-button icone_fonctionnement"></i>
-          Choisissez un restaurant
+          <p class="texte_choix_reglages">Choisissez un restaurant</p>
         </button>
         <button class="bouton_choix">
           <div class="numerotation">2</div>
           <i class="fa-solid fa-list-ul icone_fonctionnement"></i>
-          Composez votre menu
+          <p class="texte_choix_reglages">Composez votre menu</p>
         </button>
         <button class="bouton_choix">
           <div class="numerotation">3</div>
           <i class="fa-solid fa-store icone_fonctionnement"></i>
-          Dégustez au restaurant
+          <p class="texte_choix_reglages">Dégustez au restaurant</p>
         </button>
       </nav>
     </section>
@@ -55,7 +57,9 @@
 
   <body>
     <section class="conteneur_restaurants">
-      <h2 class="titre_restaurants">Restaurants</h2>
+      <div class="conteneur_titre_restaurants">
+        <h2 class="titre_restaurants">Restaurants</h2>
+      </div>
       <article class="carte_restaurants">
         <a href="lapalettedugout.html">
           <div class="arriere_plan_carte image_un">
@@ -131,16 +135,25 @@
   <!-- FOOTER -->
 
   <footer>
+    <!-- <section class="conteneur_pied_de_page">
+      <img class="logo_ohmyfood_bis" src="/assets/img/logo/ohmyfood.png" alt="" />
+      <nav class="conteneur_liens_pied_de_page">
+        <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restautant</a>
+        <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+        <a href="">Mentions légales</a>
+        <a href="">Contact</a>
+      </nav>
+    </section> -->
     <section class="conteneur_bas_de_page">
-      <div class="conteneur_ohmyfood_bis">
+      <div class="conteneur_logo_ohmyfood_bis">
         <img class="couleur_logo" src="assets/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
       </div>
       <nav class="liens_bas_de_page">
         <a class="couleur_liens" href=""
-          ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
+          ><i class="fa-solid fa-utensils fa_reglages"></i> Proposer un restaurant</a
         >
         <a class="couleur_liens" href=""
-          ><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a
+          ><i class="fa-solid fa-handshake-angle fa_reglages"></i> Devenir partenaire</a
         >
         <a class="couleur_liens" href="">Mentions légales</a>
         <a class="couleur_liens" href="">Contact</a>
