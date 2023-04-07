@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    font-family: Roboto;
+}
+
 h1,
 h2,
 h3,
@@ -35,6 +40,8 @@ a {
     display: flex;
     justify-content: flex-start;
     padding: 10px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     /* background-color: lightblue; */
 }
 
@@ -47,7 +54,7 @@ a {
 }
 
 .couleur_icone_fleche {
-    color: gray;
+    color: #353535;
 }
 
 .conteneur_logo {
@@ -58,7 +65,7 @@ a {
 }
 
 .logo_ohmyfood {
-    width: 50%;
+    height: 30px;
 }
 
 /* *** Illustration *** */
@@ -68,6 +75,7 @@ a {
     display: flex;
     align-items: flex-end;
     background-size: cover;
+    background-position: center;
     background-image: url(/assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
@@ -78,6 +86,7 @@ a {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    padding-bottom: 10px;
     border-radius: 20px 20px 0px 0px;
     /* background-color: lightpink; */
     background-color: rgb(243, 243, 243);
@@ -97,7 +106,7 @@ a {
 
 .fa-heart {
     font-size: 1.5em;
-    background: linear-gradient(#9356DC, #FF79DA);
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);;
     -webkit-background-clip: text;
     background-clip: text;
     transition: all 0.5s linear;
@@ -114,6 +123,17 @@ a {
 
 /* *** Cartes *** */
 
+.conteneur_principal {
+    position: relative;
+    overflow: hidden;
+    margin-top: -50px;
+    /* top: -50px; */
+}
+
+.conteneur_menus {
+    border-radius: 20px 20px 0px 0px;
+}
+
 .categorie_plat {
     padding-left: 5%;
     padding-right: 5%;
@@ -122,6 +142,7 @@ a {
 }
 
 .titre_menu {
+    padding-top: 25px;
     padding-bottom: 5px;
 }
 
@@ -151,39 +172,39 @@ a {
     }
 }
 
-.conteneur_carte_menu:nth-child(2) {
+.conteneur_carte_menu:nth-child(3) {
     animation-delay: 0.2s;
 }
 
-.conteneur_carte_menu:nth-child(3) {
+.conteneur_carte_menu:nth-child(4) {
     animation-delay: 0.4s;
 }
 
-.conteneur_carte_menu:nth-child(4) {
+.conteneur_carte_menu:nth-child(5) {
     animation-delay: 0.6s;
 }
 
-.conteneur_carte_menu:nth-child(6) {
+.conteneur_carte_menu:nth-child(7) {
     animation-delay: 0.8s;
 }
 
-.conteneur_carte_menu:nth-child(7) {
+.conteneur_carte_menu:nth-child(8) {
     animation-delay: 1s;
 }
 
-.conteneur_carte_menu:nth-child(8) {
+.conteneur_carte_menu:nth-child(9) {
     animation-delay: 1.2s;
 }
 
-.conteneur_carte_menu:nth-child(10) {
+.conteneur_carte_menu:nth-child(11) {
     animation-delay: 1.4s;
 }
 
-.conteneur_carte_menu:nth-child(11) {
+.conteneur_carte_menu:nth-child(12) {
     animation-delay: 1.6s;
 }
 
-.conteneur_carte_menu:nth-child(12) {
+.conteneur_carte_menu:nth-child(13) {
     animation-delay: 1.8s;
 }
 
@@ -197,7 +218,7 @@ a {
     background: white;
     /* height: 10rem; */
     border-radius: 15px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     display: flex;
 }
 
@@ -255,6 +276,7 @@ a {
 }
 
 .icone_validation {
+    fill: white;
     width: 24px;
     font-size: 3rem;
     transform: rotate(-180deg);
@@ -267,7 +289,7 @@ a {
 
 .carte_menu:active .conteneur_animation {
     opacity: 100%;
-    width: 7rem;
+    width: 5rem;
 }
 
 /* *** Bouton commander *** */
@@ -289,7 +311,7 @@ a {
     border-radius: 30px;
     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
     color: white;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     cursor: pointer;
     transition: 0.2s;
 }
@@ -310,17 +332,13 @@ a {
 .conteneur_bas_de_page {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    background-color: rgb(44, 44, 44);
+    padding: 15px;
+    background-color: #353535;
 }
 
-.conteneur_ohmyfood_bis {
-    display: flex;
-    padding-bottom: 15px;
-}
-
-.couleur_logo {
-    width: 35%;
+.reglages_logo {
+    height: 20px;
+    padding-top: 10px;
     filter: brightness(20);
 }
 
@@ -328,6 +346,12 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-top: 20px;
+}
+
+.fa_reglages {
+    justify-content: center;
+    width: 20px;
 }
 
 .couleur_liens {
@@ -337,8 +361,142 @@ a {
 /* ***** Medias Queries ***** */
 
 @media (min-width: 375px) {
+
+    .conteneur_logo_fleche {
+        padding-top: 15px;
+        padding-bottom: 7.5px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .conteneur_logo_fleche {
+        padding-top: 20px;
+    }
+
+    .conteneur_principal {
+        position: relative;
+        overflow: hidden;
+        margin-top: -40px;
+        /* top: -40px; */
+    }
+
+    .conteneur_menus {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .conteneur_menus,
+    .conteneur_commander {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .conteneur_bas_de_page {
+        height: 57px;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    .couleur_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .liens_bas_de_page {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .conteneur_principal {
+        position: relative;
+        overflow: hidden;
+        margin-top: -30px;
+        /* top: -30px; */
+    }
+
+    .conteneur_menus {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .conteneur_menus,
+    .conteneur_commander {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .conteneur_titre_lapalettedugout {
+        width: auto;
+    }
+
+    .conteneur_coeur {
+        width: auto;
+        margin-left: 25px;
+    }
+
+    .conteneur_bas_de_page {
+        height: 85.5px;
+        padding-bottom: 30px;
+        justify-content: flex-start;
+    }
+
+    .reglages_logo {
+        padding-right: 30px;
+        padding-left: 70px;
+    }
+
+    .separation_liens {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .conteneur_logo_fleche {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .image_lapalettedugout {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .conteneur_principal {
+        position: relative;
+        overflow: hidden;
+        margin-top: -20px;
+        /* top: -20px; */
+    }
+
+    .conteneur_menus {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+
+    .conteneur_menus,
+    .conteneur_commander {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .conteneur_titre_lapalettedugout {
+        width: auto;
+    }
+
+    .conteneur_coeur {
+        width: auto;
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
     body {
-        max-width: 375px;
+        max-width: 1440px;
         margin: auto;
     }
 }
