@@ -12,6 +12,57 @@ h1 {
     padding-bottom: 15px;
 }
 
+/* ***** Loader ***** */
+
+.chargement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    animation: disparition 1s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes disparition {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.point {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 1);
+    margin: 0px 15px;
+    animation: sautillement infinite 0.3s alternate;
+}
+
+@keyframes sautillement {
+    100% {
+       transform: translateY(-30px); 
+    }
+}
+
+.p_un {
+    background-color: #9356DC;
+}
+
+.p_deux {
+    background-color: #99E2D0;
+    animation-delay: 0.05s;
+}
+
+.p_trois {
+    background-color: #FF79DA;
+    animation-delay: 0.1s;
+}
+
 /* ***** Header ***** */
 
 /* *** Logo *** */
@@ -136,7 +187,7 @@ h1 {
     border: none;
     transition: 0.2s;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    position: relative;
+    /* position: relative; */
 }
 
 .bouton_choix:hover {
@@ -154,6 +205,10 @@ h1 {
     padding-top: 2.5px;
 }
 
+.icone_echoppe {
+    color: #9356DC;
+}
+
 .texte_choix_reglages {
     font-size: 16px;
     font-weight: bold;
@@ -169,7 +224,8 @@ h1 {
     justify-content: center;
     align-items: center;
     color: #fff;
-    position: absolute;
+    /* position: absolute; */
+    margin-left: -32px;
     left: -0.75rem;
 }
 
@@ -296,7 +352,10 @@ h1 {
 .reglages_logo {
     height: 20px;
     padding-top: 10px;
-    filter: brightness(20);
+    font-size: 25px;
+    color: white;
+    font-family: Shrikhand;
+    /* filter: brightness(20); */
 }
 
 .liens_bas_de_page {
