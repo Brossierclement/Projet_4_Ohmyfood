@@ -66,6 +66,8 @@ a {
 
 .logo_ohmyfood {
     height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 /* *** Illustration *** */
@@ -457,10 +459,14 @@ a {
 @media (min-width: 1440px) {
 
     .conteneur_logo_fleche {
-        padding-top: 30px;
-        padding-bottom: 20px;
+        padding-top: 35px;
+        padding-bottom: 25px;
     }
 
+    .logo_ohmyfood {
+        height: 35px;
+    }
+    
     .image_lapalettedugout {
         background-position: center;
         background-repeat: no-repeat;

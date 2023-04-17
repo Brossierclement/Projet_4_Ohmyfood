@@ -177,7 +177,7 @@ h1 {
 }
 
 .bouton_choix {
-    width: 90%;
+    width: 92%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -291,7 +291,6 @@ h1 {
 }
 
 .conteneur_description_plat {
-    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -392,20 +391,6 @@ h1 {
         padding-bottom: 30px;
     }
 
-    .conteneur_choix {
-        flex-direction: row;
-        /* flex-wrap: nowrap; */
-        justify-content: space-around;
-    }
-
-    .conteneur_titre_fonctionnement {
-        width: 100%;
-    }
-
-    .bouton_choix {
-        width: 27%;
-    }
-
     .conteneur_restaurants {
         flex-direction: row;
         justify-content: space-evenly;
@@ -441,6 +426,10 @@ h1 {
 }
 
 @media (min-width: 925px) {
+
+    .conteneur_choix {
+        gap: 30px;
+    }
     .bouton_choix {
         width: 30%;
     }
@@ -449,6 +438,7 @@ h1 {
 @media (min-width: 1024px) {
 
     .conteneur_choix {
+        gap: 25px;
         justify-content: space-evenly;
     }
 
@@ -457,7 +447,7 @@ h1 {
     }
 
     .bouton_choix {
-        width: 27%;
+        width: 26.9%;
     }
 
     .carte_restaurants {
@@ -465,7 +455,7 @@ h1 {
     }
 
     .conteneur_titre_restaurants {
-        width: 85.6%;
+        width: 85.7%;
     }
 
     .conteneur_bas_de_page {
@@ -490,6 +480,7 @@ h1 {
         font-size: 40px;
     }
 
+    /* Modification pour les autres pages */
     .logo_ohmyfood {
         height: 35px;
         padding-top: 30px;
@@ -498,8 +489,8 @@ h1 {
 
     .conteneur_choix {
         justify-content: space-evenly;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 
     .conteneur_titre_fonctionnement {
@@ -507,13 +498,13 @@ h1 {
     }
 
     .bouton_choix {
-        width: 25.5%;
+        width: 25%;
     }
 
     .conteneur_restaurants {
         padding-bottom: 30px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 
     .conteneur_titre_restaurants {
