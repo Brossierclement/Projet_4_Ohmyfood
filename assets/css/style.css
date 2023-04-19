@@ -68,18 +68,17 @@ h1 {
 /* *** Logo *** */
 
 .conteneur_ohmyfood {
+    height: 65px;
     display: flex;
     justify-content: center;
-    padding-top: 5px;
+    align-items: center;
     /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); */
     /* background-color: lightcoral; */
 }
 
 .logo_ohmyfood {
     /* width: 200px; */
-    height: 25px;
-    padding-top: 4%;
-    padding-bottom: 2.5%;
+    height: 30px;
 }
 
 /* *** Localisation *** */
@@ -147,7 +146,7 @@ h1 {
 .bouton_nos_restaurants:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
-    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.18);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .bouton_nos_restaurants:active {
@@ -187,6 +186,7 @@ h1 {
     border: none;
     transition: 0.2s;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
     /* position: relative; */
 }
 
@@ -387,6 +387,10 @@ h1 {
         font-size: 35px;
     }
 
+    .conteneur_ohmyfood {
+        height: 75px;
+    }
+
     .conteneur_nos_restaurants {
         padding-bottom: 30px;
     }
@@ -437,6 +441,10 @@ h1 {
 
 @media (min-width: 1024px) {
 
+    .conteneur_ohmyfood {
+        height: 85px;
+    }
+
     .conteneur_choix {
         gap: 25px;
         justify-content: space-evenly;
@@ -480,11 +488,8 @@ h1 {
         font-size: 40px;
     }
 
-    /* Modification pour les autres pages */
-    .logo_ohmyfood {
-        height: 35px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .conteneur_ohmyfood {
+        height: 90px;
     }
 
     .conteneur_choix {
@@ -515,7 +520,6 @@ h1 {
         width: 35%;
     }
 }
-
 
 @media (min-width: 1440px) {
     body {

@@ -37,12 +37,10 @@ a {
 /* *** Fleche & Logo *** */
 
 .conteneur_logo_fleche {
+    height: 65px;
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    /* background-color: lightblue; */
+    align-items: center;
 }
 
 .conteneur_fleche {
@@ -50,7 +48,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: lightgray; */
 }
 
 .couleur_icone_fleche {
@@ -61,24 +58,24 @@ a {
     width: 80%;
     display: flex;
     justify-content: center;
-    /* background-color: lightgoldenrodyellow; */
 }
 
 .logo_ohmyfood {
     height: 30px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 
 /* *** Illustration *** */
 
-.image_lapalettedugout {
-    height: 275px;
-    display: flex;
-    align-items: flex-end;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+.conteneur_image_bannière {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image_palettedugout {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* *** Titre & Coeur *** */
@@ -89,14 +86,12 @@ a {
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 10px;
-    border-radius: 20px 20px 0px 0px;
-    /* background-color: lightpink; */
+    border-radius: 45px 45px 0px 0px;
     background-color: rgb(243, 243, 243);
 }
 
 .conteneur_titre_lapalettedugout {
     width: 70%;
-    /* background-color: lightblue; */
 }
 
 .conteneur_coeur {
@@ -128,12 +123,12 @@ a {
 .conteneur_principal {
     position: relative;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: -35px;
     /* top: -50px; */
 }
 
 .conteneur_menus {
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 35px 35px 0px 0px;
 }
 
 .categorie_plat {
@@ -186,28 +181,40 @@ a {
     animation-delay: 0.6s;
 }
 
-.conteneur_carte_menu:nth-child(7) {
+.conteneur_carte_menu:nth-child(6) {
     animation-delay: 0.8s;
 }
 
-.conteneur_carte_menu:nth-child(8) {
+.conteneur_carte_menu:nth-child(7) {
     animation-delay: 1s;
 }
 
-.conteneur_carte_menu:nth-child(9) {
+.conteneur_carte_menu:nth-child(8) {
     animation-delay: 1.2s;
 }
 
-.conteneur_carte_menu:nth-child(11) {
+.conteneur_carte_menu:nth-child(9) {
     animation-delay: 1.4s;
 }
 
-.conteneur_carte_menu:nth-child(12) {
+.conteneur_carte_menu:nth-child(10) {
     animation-delay: 1.6s;
 }
 
-.conteneur_carte_menu:nth-child(13) {
+.conteneur_carte_menu:nth-child(11) {
     animation-delay: 1.8s;
+}
+
+.conteneur_carte_menu:nth-child(12) {
+    animation-delay: 2s;
+}
+
+.conteneur_carte_menu:nth-child(13) {
+    animation-delay: 2.2s;
+}
+
+.conteneur_carte_menu:nth-child(14) {
+    animation-delay: 2.4s;
 }
 
 .conteneur_menus {
@@ -218,7 +225,6 @@ a {
 .carte_menu {
     width: 90%;
     background: white;
-    /* height: 10rem; */
     border-radius: 15px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -232,7 +238,6 @@ a {
     justify-content: space-between;
     color: black;
     overflow: hidden;
-    /* gap: 1rem; */
 }
 
 .intitule_menu {
@@ -285,11 +290,11 @@ a {
     transition-duration: .5s;
 }
 
-.carte_menu:active .icone_validation {
+.carte_menu:hover .icone_validation {
     transform: rotate(-360deg);
 }
 
-.carte_menu:active .conteneur_animation {
+.carte_menu:hover .conteneur_animation {
     opacity: 100%;
     width: 5rem;
 }
@@ -321,7 +326,7 @@ a {
 .bouton_commander:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
-    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.18);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .bouton_commander:active {
@@ -363,24 +368,17 @@ a {
 /* ***** Medias Queries ***** */
 
 @media (min-width: 375px) {
-
-    .conteneur_logo_fleche {
-        padding-top: 15px;
-        padding-bottom: 7.5px;
-    }
 }
 
 @media (min-width: 768px) {
 
     .conteneur_logo_fleche {
-        padding-top: 20px;
+        height: 75px;
     }
 
     .conteneur_principal {
         position: relative;
         overflow: hidden;
-        margin-top: -40px;
-        /* top: -40px; */
     }
 
     .conteneur_menus {
@@ -413,11 +411,13 @@ a {
 
 @media (min-width: 1024px) {
 
+    .conteneur_logo_fleche {
+        height: 85px;
+    }
+
     .conteneur_principal {
         position: relative;
         overflow: hidden;
-        margin-top: -30px;
-        /* top: -30px; */
     }
 
     .conteneur_menus {
@@ -459,14 +459,9 @@ a {
 @media (min-width: 1440px) {
 
     .conteneur_logo_fleche {
-        padding-top: 35px;
-        padding-bottom: 25px;
+        height: 90px;
     }
 
-    .logo_ohmyfood {
-        height: 35px;
-    }
-    
     .image_lapalettedugout {
         background-position: center;
         background-repeat: no-repeat;
@@ -475,8 +470,6 @@ a {
     .conteneur_principal {
         position: relative;
         overflow: hidden;
-        margin-top: -20px;
-        /* top: -20px; */
     }
 
     .conteneur_menus {
