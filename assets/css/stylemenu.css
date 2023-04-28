@@ -90,6 +90,11 @@ a {
     background-color: rgb(243, 243, 243);
 }
 
+.typo_menu {
+    font-family: Shrikhand;
+    font-size: 1.5em;
+}
+
 .conteneur_titre_lapalettedugout {
     width: 70%;
 }
